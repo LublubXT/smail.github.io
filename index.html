@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="email.png" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Smail</title>
+    </head>
+
+    <body>
+        <div class="form">
+            <img src="info.png" alt="info" class="img1">
+            <h1><img src="email.png" alt="email"> Smail</h1>
+            <form action="POST">
+                <input type="email" placeholder="Your Gmail" id="myemail" required="True">
+                <br>
+                <input type="password" placeholder="Your Password" id="mypass" required="True">
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <input type="email" placeholder="Subjects Email" id="email" required="True">
+                <br>
+                <input type="text" placeholder="Subject" id="name" required="True">
+                <br>
+                <textarea name="message" id="mess" cols="30" rows="10" placeholder="Message"></textarea>
+                <br>
+                <input type="button" value="Send Smail" style="width: fit-content; " onclick="sendEmail()">
+            </form>
+
+        </div>
+        <div class="side">
+            <h1 style="color: white;">Info</h1>
+            <hr>
+            <h2>How to use</h2>
+            <p>-First, type in your email then password (It has to be a Gmail account otherwise it won't work)</p>
+            <p>-Second, type in your subjects email and name (The email doesn't have to be a Gmail it can be
+                anything...) </p>
+            <p>-Last but not least, write your message and click the send button.</p>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <h3>If you want to see more apps like this go to our website <a href="http://aztecteam.herokuapp.com/"
+                    target="_blank">here</a>.</h3>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
